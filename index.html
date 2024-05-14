@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dzianis Yermantovich</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h2>1)Video with width</h2>
+    <video width="400">
+        <source src="./cat.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+    </video>
+
+    <p>
+        Video courtesy of
+        <a href="./cat.mp4" target="_blank">Cat</a>.
+    </p>
+
+    <h2>2)Video with width, height and controls</h2>
+    <video width="320" height="240" controls>
+        <source src="./cat.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>3)Autoplay(Note: Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always
+        allowed.)</h2>
+    <video width="320" height="240" autoplay muted>
+        <source src="./cat.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+    <div style="text-align:center">
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="420">
+            <source src="./cat.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+    </div>
+    <p>Video courtesy of <a href="./cat.mp4" target="_blank">funny cat</a>.</p>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
